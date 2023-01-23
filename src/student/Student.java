@@ -1,22 +1,24 @@
 package student;
 
+
 public class Student {
 
     public static void main(String[] args) {
         
-    Student []list= new Student[5];
+    Studentlist[] list= new Studentlist[3];
     
-    Student one = new Student();
+    Studentlist one = new Studentlist();
     
     one.setName("Aum");
     one.setAge(19);
    
-    Student two = new Student();
+    
+    Studentlist two = new Studentlist();
     
     two.setName("Umang");
     two.setAge(24);
    
-    Student three = new Student();
+    Studentlist three = new Studentlist();
     
     three.setName("Jahnavi");
     three.setAge(22);
@@ -25,10 +27,9 @@ public class Student {
     list[1]=two;
     list[2]=three;
       
-    for(int i=0;i<list.length;i++ )
-       {
-           System.out.println(list[i].getName() + list[i].getAge());
-       }
-
+        for(int i = 0 ; i < list.length ; i++)
+        {
+            System.out.println(list[i].getName() +list[i].getAge());
+        }
     }    
 }
